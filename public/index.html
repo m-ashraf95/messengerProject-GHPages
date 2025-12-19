@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Messenger Todo List POC" />
+    <title>Messenger Todo List</title>
+    
+    <!-- Facebook Messenger Extensions SDK -->
+    <script>
+      window.extAsyncInit = function() {
+        // Messenger Extensions are available
+        console.log('Messenger Extensions SDK loaded');
+      };
+    </script>
+    <script src="https://connect.facebook.net/en_US/messenger.Extensions.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+

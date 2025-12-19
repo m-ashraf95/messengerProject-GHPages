@@ -1,0 +1,17 @@
+services:
+  # React Frontend (GitHub Pages Version)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: messenger-todo-ghpages
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    networks:
+      - messenger-network
+
+networks:
+  messenger-network:
+    driver: bridge
+
